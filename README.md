@@ -3,7 +3,7 @@
 ## BACK NODE.JS
 ## TYPESCRIPT
 
-```text
+```
 meu-projeto/
 ├── backend/         # Pasta para o backend (Node.js)
 │   ├── src/
@@ -47,4 +47,4 @@ meu-projeto/
 │   ├── tsconfig.json
 │   └── .env.local
 └── README.md
-```text
+```
