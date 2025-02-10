@@ -7,6 +7,8 @@
 meu-projeto/
 ├── backend/         # Pasta para o backend (Node.js)
 │   ├── src/
+│   │   ├── controller/
+│   │   │   └── auth.ts    # Lógica de autenticação (funções de login, registro, etc.)
 │   │   ├── index.ts       # Ponto de entrada do servidor
 │   │   ├── routes/
 │   │   │   ├── auth.ts   # Rotas de autenticação (login, registro, etc.)
@@ -14,7 +16,7 @@ meu-projeto/
 │   │   ├── models/
 │   │   │   └── User.ts   # Modelo do usuário (Mongoose)
 │   │   ├── services/
-│   │   │   └── auth.ts    # Lógica de autenticação (funções de login, registro, etc.)
+
 │   │   ├── config/      # Configurações (variáveis de ambiente, conexão com o banco de dados, etc.)
 │   │   │   ├── db.ts
 │   │   │   └── jwt.ts    # Configuração do JWT

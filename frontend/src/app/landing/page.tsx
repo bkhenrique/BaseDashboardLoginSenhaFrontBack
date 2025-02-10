@@ -10,15 +10,15 @@ import { useThemeContext } from "@/contexts/ThemeContext";
 export default function LandingPage() {
   const router = useRouter();
   const { user } = useAuth();
-  const {  toggleTheme } = useThemeContext();
+  const { toggleTheme } = useThemeContext();
 
   return (
     <Container maxWidth="sm" sx={{ mt: 8, textAlign: "center" }}>
       <Typography variant="h3" gutterBottom>
-        Bem-vindo ao 
+        Bem-vindo ao
       </Typography>
       <Typography variant="h3" gutterBottom>
-         BK Solution!
+        BK Solution!
       </Typography>
       <Typography variant="body1" gutterBottom>
         {user

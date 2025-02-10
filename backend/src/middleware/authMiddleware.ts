@@ -2,6 +2,13 @@
 import { Request, Response, NextFunction } from "express";
 import { verifyToken } from "../utils/verifiToken";
 import User from "../models/User";
+declare global {
+  namespace Express {
+    interface Request {
+      user?: any; // Ou um tipo mais específico
+    }
+  }
+}
 
 interface AuthenticatedRequest extends Request {
   user?: {

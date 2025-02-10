@@ -23,7 +23,7 @@ export interface IUser2 {
   phone: string;
   email: string;
   role: "client" | "master";
-  status: "cancelado" | "ativo" | "atrasado" | "pendente";
+  status: "cancelado" | "ativo" | "atrasado" | "pendente" | "novo";
 }
 
 const UserSchema = new Schema<IUser>(
@@ -38,7 +38,7 @@ const UserSchema = new Schema<IUser>(
     role: { type: String, enum: ["client", "master"], default: "client" },
     status: {
       type: String,
-      enum: ["cancelado", "ativo", "atrasado", "pendente"],
+      enum: ["cancelado", "ativo", "atrasado", "pendente", "novo"],
       default: "pendente",
     },
   },
